@@ -35,6 +35,7 @@ import Otter from "./Otter";
 import Pitch from "./Pitch";
 import Prezi from "./Prezi";
 import Spotify from "./Spotify";
+import Terrastruct from "./Terrastruct";
 import Tldraw from "./Tldraw";
 import Trello from "./Trello";
 import Typeform from "./Typeform";
@@ -317,6 +318,13 @@ const embeds: EmbedDescriptor[] = [
     icon: () => <Img src="/images/spotify.png" alt="Spotify" />,
     component: Spotify,
     matcher: matcher(Spotify),
+  },
+  {
+    title: "Terrastruct",
+    keywords: "diagrams",
+    icon: () => <Img src="/images/terrastruct.png" alt="Terrastruct" />,
+    component: Terrastruct,
+    matcher: matcher(Terrastruct),
   },
   {
     title: "Tldraw",
